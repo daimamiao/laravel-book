@@ -8,6 +8,6 @@ use App\Category;
 class IndexController extends Controller
 {
     public function index() {
-        return Category::all();
+        return view('login');
     }
 }

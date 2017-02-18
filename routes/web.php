@@ -12,3 +12,11 @@
 */
 
 Route::get('/', 'IndexController@index');
+
+Route::any('/service/validate_code/create', 'Service\ValidateController@create');
+Route::any('/service/validate_phone/send', 'Service\ValidateController@sendSMS');
+
+Route::get('/login', 'MemberController@login');
+Route::get('/register', 'MemberController@register');
+
+Route::post('/service/register', 'MemberController@register');
